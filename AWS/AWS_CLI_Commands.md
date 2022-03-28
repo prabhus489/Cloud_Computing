@@ -1,5 +1,6 @@
 # Set the Region
 AZ=`curl -s http://169.254.169.254/latest/meta-data/placement/availability-zone`
+
 export AWS_DEFAULT_REGION=${AZ::-1}
 
 # Obtain latest Linux AMI
@@ -19,6 +20,7 @@ echo $SG
 
 #### to download userdata script
 cd ~
+
 wget https://EC2/scripts/UserDataInstanceB.txt
 
 cat UserDataInstanceB.txt
