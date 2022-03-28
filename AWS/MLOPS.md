@@ -1,4 +1,4 @@
-Tagging Strategy
+##### Tagging Strategy
 https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html
 https://d0.awsstatic.com/aws-answers/AWS_Tagging_Strategies.pdf
 https://d1.awsstatic.com/whitepapers/aws-tagging-best-practices.pdf
@@ -15,9 +15,9 @@ https://boto3.amazonaws.com/v1/documentation/api/1.9.42/reference/services/sagem
 
 https://docs.aws.amazon.com/lambda/index.html
 
-### Commands:
+#### Commands:
 aws sagemaker-runtime invoke-endpoint \
-  --endpoint-name https://runtime.sagemaker.us-west-2.amazonaws.com/endpoints/arn:aws:sagemaker:us-west-2:473733774334:endpoint/productionendpoint-oohyodj0rhia/invocations \
+  --endpoint-name https://runtime.sagemaker.Prod-endpoint/invocations \
   --body file://payload.csv \
   --content-type "text/csv" \
   predictions.txt
